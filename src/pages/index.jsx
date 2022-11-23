@@ -6,23 +6,10 @@ import { Container } from '@/components/Container'
 import image1 from '@/images/photos/humble.jpg'
 import image2 from '@/images/photos/history.jpg'
 import image3 from '@/images/photos/insta.jpg'
-import image4 from '@/images/photos/questionable.jpg'
-import image5 from '@/images/photos/adventure.jpg'
+import image4 from '@/images/photos/ladder.jpg'
+import image5 from '@/images/photos/upstream.jpg'
 import cover from '@/images/photos/cover.png'
 import Download from '@/components/Download'
-
-function ArrowDownIcon(props) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -51,7 +38,7 @@ function Photos() {
   )
 }
 
-export default function Home({ articles }) {
+export default function Home() {
   return (
     <>
       <Head>
