@@ -17,8 +17,6 @@ export default function Download(props) {
             <div className="inline-flex rounded-md shadow">
               <a
                 href={props.href} 
-                download 
-                target="_blank" 
                 className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
               >
                 {props.text}

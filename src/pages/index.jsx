@@ -95,7 +95,7 @@ export default function Home() {
       </Container>
       <Photos />
       <Container className="rounded-2xl">
-        <Download text="Download Chapter One" src={cover.src} href="https://peter-conridge.s3.eu-west-2.amazonaws.com/chapter-one.pdf" />
+        <Download text="Explore Chapter One" src={cover.src} href="/the-meeting-of-the-waters" />
       </Container>
     </>
   )

@@ -3,6 +3,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
 
+import * as React from 'react';
+
+import { Viewer } from '@react-pdf-viewer/core';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+
+
 import { Container } from '@/components/Container'
 import {
   TwitterIcon,
@@ -24,6 +30,8 @@ function MailIcon(props) {
 }
 
 export default function Books() {
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+
   return (
     <>
       <Head>
@@ -47,16 +55,14 @@ export default function Books() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-             Books 
+              Books
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                Coming soon.
-              </p>
+            Coming soon!
             </div>
           </div>
         </div>
-      </Container>
+      </Container >
     </>
   )
 }
